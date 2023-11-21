@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": { "toplevel": { "$ref": "#/$defs/Person" } },
+  "$defs": {
+    "Address": {
+      "type": "object",
+      "properties": {
+        "city": { "type": "string" },
+        "zipcode": { "type": "string" },
+        "country": { "type": "string" }
+      }
+    },
+    "Person": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "dob": { "type": "string", "format": "date" },
+        "address": { "$ref": "#/$defs/Address" }
+      }
+    }
+  }
+}
