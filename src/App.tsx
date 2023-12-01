@@ -6,8 +6,6 @@ import {
 import { JsonForms } from '@jsonforms/react';
 
 import schema from './formtypes/schema.json';
-
-// import logo from './logo.svg';
 import './App.css';
 
 const initialData = {}
